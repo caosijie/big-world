@@ -62,7 +62,7 @@ $(function(){
                 }
                 layer.msg('登录成功');
                 localStorage.setItem('token',res.token);
-                location.href='/home.html'
+                location.href='/index.html'
                 console.log(res);
             }
         })
