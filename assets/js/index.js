@@ -23,15 +23,12 @@ function getuserInfo(){
     $.ajax({
         method:'GET',
         url:'/my/userinfo',
-        headers:{
-            Authorization:localStorage.getItem('token')
-        },
         success:function(res){
                 if(res.status!=0)
                 {
                     return layer.msg(res.message);
                 }
-                console.log(res);
+                // console.log(res);
                 renderImg(res.data);
             }
         
